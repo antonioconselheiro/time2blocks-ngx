@@ -1,0 +1,27 @@
+{
+  "name": "Existing Docker Compose (Extend)",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "time2blocks-ngx-dev",
+	"workspaceFolder": "/time2blocks-ngx",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.vscode-typescript-next",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-docker",
+				"naumovs.color-highlight",
+				"connieth.bubblegum",
+				"manishsencha.readme-preview",
+				"wix.vscode-import-cost",
+				"aaron-bond.better-comments",
+				"shd101wyy.markdown-preview-enhanced",
+				"jaredkent.laserwave",
+				"Angular.ng-template",
+				"ms-vscode-remote.remote-containers"
+			]
+		}
+	}
+}
