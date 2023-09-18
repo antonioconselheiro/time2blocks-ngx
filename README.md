@@ -1,6 +1,19 @@
 # Belomonte
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+Workspace for @belomonte library development
+
+## Donate
+Help me continue working on tools for the bitcoin and nostr universe, like this one. #zapthedev
+
+There's still a lot of work to do.
+
+Lighting donate: [lightning:peevedbeer57@walletofsatoshi.com](lightning:peevedbeer57@walletofsatoshi.com)
+
+![zap me with lighting network](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-lighting.png)
+
+Bitcoin onchain donate: [bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q](bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q)
+
+![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-bitcoin.png)
 
 ## Development server
 
