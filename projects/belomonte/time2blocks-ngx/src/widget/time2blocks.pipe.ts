@@ -9,9 +9,10 @@ export class Time2BlocksPipe implements PipeTransform {
 
   constructor(
     private time2blocksService: Time2BlocksService
-  ) {}
+  ) { }
 
-  async transform(value: number, format: string, type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' = 'blocks'): Promise<string> {
+  async transform(value: number, format = 'B', type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' = 'milliseconds-timestamp'): Promise<string> {
+    debugger;
     if (type === 'blocks') {
       return this.time2blocksService.format(value, format);
     } else if (type === 'timestamp') {
@@ -27,7 +28,7 @@ export class Time2BlocksPipe implements PipeTransform {
         return '';
       }
 
-      return this.time2blocksService.format(value, format);
+      return this.time2blocksService.format(blocks, format);
     }
   }
 

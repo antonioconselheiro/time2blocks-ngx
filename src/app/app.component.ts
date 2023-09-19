@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'belomonte';
+  getCurrentTime(): number {
+    return Math.floor(new Date().getTime() / 1000);
+  }
 }
