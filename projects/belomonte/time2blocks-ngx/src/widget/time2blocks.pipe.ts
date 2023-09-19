@@ -11,30 +11,30 @@ export class Time2BlocksPipe implements PipeTransform {
     private time2blocksService: Time2BlocksService
   ) { }
 
-  async transform(value: number, format = 'B', type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' | 'minutes' = 'minutes'): Promise<string> {
+  async transform(value: number, format = 'B', type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' | 'minutes' = 'timestamp', numberSeparator = ','): Promise<string> {
     if (type === 'blocks') {
-      return this.time2blocksService.format(value, format);
+      return this.time2blocksService.format(value, format, numberSeparator);
     } else if (type === 'minutes') {
       const blocks = await this.time2blocksService.getFromMinutes(value);
       if (!blocks) {
         return '';
       }
 
-      return this.time2blocksService.format(blocks, format);
+      return this.time2blocksService.format(blocks, format, numberSeparator);
     } else if (type === 'timestamp') {
       const blocks = await this.time2blocksService.getFromTimestamp(value);
       if (!blocks) {
         return '';
       }
 
-      return this.time2blocksService.format(blocks, format);
+      return this.time2blocksService.format(blocks, format, numberSeparator);
     } else {
       const blocks = await this.time2blocksService.getFromMillisecondsTimestamp(value);
       if (!blocks) {
         return '';
       }
 
-      return this.time2blocksService.format(blocks, format);
+      return this.time2blocksService.format(blocks, format, numberSeparator);
     }
   }
 
