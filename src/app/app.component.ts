@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  getCurrentTime(): number {
-    return Math.floor(new Date().getTime() / 1000);
+
+  getCurrentTimeInMinutes(): number {
+    return Math.floor(new Date().getTime() / 60_000);
   }
 }

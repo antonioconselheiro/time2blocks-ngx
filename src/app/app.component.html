@@ -9,34 +9,64 @@
   </thead>
   <tbody>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks | async }}</td>
       <td>B</td>
-      <td>{{ getCurrentTime() | time2blocks | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks | async }}</td>
     </tr>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks : 'BB' | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'BB' | async }}</td>
       <td>BB</td>
-      <td>{{ getCurrentTime() | time2blocks : 'BB' | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'BB' | async }}</td>
     </tr>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks : 'h [halving], [block] b' | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'h [halving], [block] b' | async }}</td>
       <td>h [halving], [block] b</td>
-      <td>{{ getCurrentTime() | time2blocks : 'h [halving], [block] b' | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'h [halving], [block] b' | async }}</td>
     </tr>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks : 'H [halving], [block] bb' | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H [halving], [block] bb' | async }}</td>
       <td>H [halving], [block] bb</td>
-      <td>{{ getCurrentTime() | time2blocks : 'H [halving], [block] bb' | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H [halving], [block] bb' | async }}</td>
     </tr>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks : 'H, %%' | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %' | async }}</td>
+      <td>H, %</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%' | async }}</td>
       <td>H, %%</td>
-      <td>{{ getCurrentTime() | time2blocks : 'H, %%' | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%' | async }}</td>
     </tr>
     <tr>
-      <td ngNonBindable>{{ getCurrentTime() | time2blocks : 'H (-%%%)' | async }}</td>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%%' | async }}</td>
+      <td>H, %%%</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%%' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%%%' | async }}</td>
+      <td>H, %%%%</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H, %%%%' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%)' | async }}</td>
+      <td>H (-%)</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%)' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%)' | async }}</td>
+      <td>H (-%%)</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%)' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%%)' | async }}</td>
       <td>H (-%%%)</td>
-      <td>{{ getCurrentTime() | time2blocks : 'H (-%%%)' | async }}</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%%)' | async }}</td>
+    </tr>
+    <tr>
+      <td ngNonBindable>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%%%)' | async }}</td>
+      <td>H (-%%%%)</td>
+      <td>{{ getCurrentTimeInMinutes() | time2blocks : 'H (-%%%%)' | async }}</td>
     </tr>
   </tbody>
 </table>

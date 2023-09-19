@@ -1,6 +1,6 @@
 # Belomonte
 
-Workspace for @belomonte library development
+Workspace for @belomonte angular library development
 
 ## Donate
 Help me continue working on tools for the bitcoin and nostr universe, like this one. #zapthedev

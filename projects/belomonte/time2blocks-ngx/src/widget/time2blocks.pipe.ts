@@ -11,10 +11,16 @@ export class Time2BlocksPipe implements PipeTransform {
     private time2blocksService: Time2BlocksService
   ) { }
 
-  async transform(value: number, format = 'B', type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' = 'milliseconds-timestamp'): Promise<string> {
-    debugger;
+  async transform(value: number, format = 'B', type: 'milliseconds-timestamp' | 'timestamp' | 'blocks' | 'minutes' = 'minutes'): Promise<string> {
     if (type === 'blocks') {
       return this.time2blocksService.format(value, format);
+    } else if (type === 'minutes') {
+      const blocks = await this.time2blocksService.getFromMinutes(value);
+      if (!blocks) {
+        return '';
+      }
+
+      return this.time2blocksService.format(blocks, format);
     } else if (type === 'timestamp') {
       const blocks = await this.time2blocksService.getFromTimestamp(value);
       if (!blocks) {

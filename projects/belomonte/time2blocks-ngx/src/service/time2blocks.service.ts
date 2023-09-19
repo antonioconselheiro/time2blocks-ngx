@@ -20,6 +20,10 @@ export class Time2BlocksService {
     return time2Blocks.getFromTimestamp(timestamp);
   }
 
+  getFromMinutes(timestamp: number): Promise<number | null> {
+    return time2Blocks.getFromMinutes(timestamp);
+  }
+
   getFromMillisecondsTimestamp(javascriptTimestamp: number): Promise<number | null> {
     return time2Blocks.getFromMillisecondsTimestamp(javascriptTimestamp);
   }
