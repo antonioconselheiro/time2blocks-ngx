@@ -1,9 +1,13 @@
 {
   "name": "@belomonte/time2blocks-ngx",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioconselheiro/time2blocks-ngx.git"
+  },
   "peerDependencies": {
     "@angular/common": "^16.2.0",
-    "@belomonte/time2blocks-light": "^1.0.7",
+    "@belomonte/time2blocks-light": "^1.0.10",
     "@angular/core": "^16.2.0"
   },
   "dependencies": {

@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioconselheiro/time2blocks-ngx.git"
+  },
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
@@ -18,7 +21,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "@belomonte/time2blocks-light": "^1.0.8",
+    "@belomonte/time2blocks-light": "^1.0.10",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
