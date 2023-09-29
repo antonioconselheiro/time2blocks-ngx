@@ -12,14 +12,6 @@ export class Time2BlocksService {
     return this.time2Blocks.getFromTimestamp(timestamp);
   }
 
-  getFromMinutes(timestamp: number): Promise<number | null> {
-    return this.time2Blocks.getFromMinutes(timestamp);
-  }
-
-  getFromMillisecondsTimestamp(javascriptTimestamp: number): Promise<number | null> {
-    return this.time2Blocks.getFromMillisecondsTimestamp(javascriptTimestamp);
-  }
-
   format(block: number, format: string, numberSeparator?: string): string {
     return this.time2Blocks.format(block, format, numberSeparator);
   }

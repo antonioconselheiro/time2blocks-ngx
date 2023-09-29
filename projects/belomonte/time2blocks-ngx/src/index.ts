@@ -5,4 +5,5 @@ export * from './service/time2blocks.service';
 export * from './service/time2blocks-service.module';
 export * from './widget/time2blocks-widget.module';
 export * from './widget/time2blocks.pipe';
+export * from './widget/block-format.pipe';
 
