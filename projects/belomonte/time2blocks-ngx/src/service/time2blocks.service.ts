@@ -1,25 +1,27 @@
 import { Injectable } from '@angular/core';
-import { time2Blocks } from '@belomonte/time2blocks-light';
+import { Time2Blocks } from '@belomonte/time2blocks-light';
 
 @Injectable({
   providedIn: 'root'
 })
 export class Time2BlocksService {
 
+  time2Blocks = Time2Blocks.getInstance();
+
   getFromTimestamp(timestamp: number): Promise<number | null> {
-    return time2Blocks.getFromTimestamp(timestamp);
+    return this.time2Blocks.getFromTimestamp(timestamp);
   }
 
   getFromMinutes(timestamp: number): Promise<number | null> {
-    return time2Blocks.getFromMinutes(timestamp);
+    return this.time2Blocks.getFromMinutes(timestamp);
   }
 
   getFromMillisecondsTimestamp(javascriptTimestamp: number): Promise<number | null> {
-    return time2Blocks.getFromMillisecondsTimestamp(javascriptTimestamp);
+    return this.time2Blocks.getFromMillisecondsTimestamp(javascriptTimestamp);
   }
 
   format(block: number, format: string, numberSeparator?: string): string {
-    return time2Blocks.format(block, format, numberSeparator);
+    return this.time2Blocks.format(block, format, numberSeparator);
   }
 
 }
