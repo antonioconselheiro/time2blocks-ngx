@@ -1,8 +1,8 @@
-#### Provérbios 10
-⁴ O preguiçoso fica pobre, mas quem se esforça no trabalho enriquece.
-⁵ Quem tem juízo colhe no tempo certo, mas quem dorme na época da colheita passa vergonha.
-⁶ Os bons são abençoados. As palavras dos maus escondem a sua violência.
-⁷ Os bons serão lembrados como uma bênção, porém os maus logo serão esquecidos.
+#### Proverbs 10
+³ The LORD will not suffer the soul of the righteous to famish: but he casts away the substance of the wicked.
+⁴ He becomes poor that deals with a slack hand: but the hand of the diligent makes rich.
+⁵ He that gathers in summer is a wise son: but he that sleeps in harvest is a son that causes shame.
+⁶ Blessings are on the head of the just: but violence covers the mouth of the wicked. 
 
 # Belomonte
 
@@ -15,11 +15,11 @@ There's still a lot of work to do.
 
 Lighting donate: [lightning:peevedbeer57@walletofsatoshi.com](lightning:peevedbeer57@walletofsatoshi.com)
 
-![zap me with lighting network](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-lighting.png)
+![zap me with lighting network](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/imgs/qrcode-wallet-lighting.png)
 
 Bitcoin onchain donate: [bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q](bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q)
 
-![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-bitcoin.png)
+![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/imgs/qrcode-wallet-bitcoin.png)
 
 ## Development server
 
