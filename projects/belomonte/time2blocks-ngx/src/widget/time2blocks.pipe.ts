@@ -12,7 +12,11 @@ export class Time2BlocksPipe implements PipeTransform {
   ) { }
 
   async transform(value: number, format = 'B', numberSeparator = ','): Promise<string> {
-    const blocks = await this.time2blocksService.getFromTimestamp(value);
+    console.info('[Time2BlocksPipe] pipe called, block: ', value, 'format: ', format, 'numberSeparator: ', numberSeparator);
+debugger;
+    const blocks = await this.time2blocksService
+      .getFromTimestamp(value)
+      .catch(e => console.error(e));
     if (!blocks) {
       return '';
     }
