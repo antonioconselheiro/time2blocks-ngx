@@ -7,9 +7,9 @@
 # Time2BlocksNgx
 Timestamp to bitcoin block
 
-[![npm version](https://badge.fury.io/js/@belomonte%2Ftime2blocks.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
-[![Npm Total Downloads](https://img.shields.io/npm/dt/@belomonte/time2blocks.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
-[![Npm Monthly Downloads](https://img.shields.io/npm/dm/@belomonte/time2blocks.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
+[![npm version](https://badge.fury.io/js/@belomonte%2Ftime2blocks-ngx.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
+[![Npm Total Downloads](https://img.shields.io/npm/dt/@belomonte/time2blocks-ngx.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
+[![Npm Monthly Downloads](https://img.shields.io/npm/dm/@belomonte/time2blocks-ngx.svg)](https://github.com/antonioconselheiro/time2blocks-ngx)
 
 This library contains `@belomonte/time2blocks` functions provided as angular service and as an angular pipe.
 
@@ -98,11 +98,11 @@ There's still a lot of work to do.
 
 Lighting donate: [lightning:peevedbeer57@walletofsatoshi.com](lightning:peevedbeer57@walletofsatoshi.com)
 
-![zap me with lighting network](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-lighting.png)
+![zap me with lighting network](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/imgs/qrcode-wallet-lighting.png)
 
 Bitcoin onchain donate: [bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q](bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q)
 
-![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/docs/qrcode-wallet-bitcoin.png)
+![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/imgs/qrcode-wallet-bitcoin.png)
 
 ## Build
 
