@@ -89,28 +89,49 @@ export class AppService implements OnInit {
 ```
 
 ### Formats
+
 h - current halving
+
 H - next halving
+
 -h - last halving
+
 B - all blocks
+
 BB - All blocks in format 0,000,000
+
 b - blocks in this halving
+
 bb - blocks in this halving in format 000,000
+
 -b - blocks to next halving
+
 -bb - blocks to next halving in format 000,000
+
 % - blocks in this halving in percentage: 0.0% ~ 100.0%, 
+
 %% - blocks in this halving in percentage: 0.00% ~ 100.00%, 
+
 %%% - blocks in this halving in percentage: 0.000% ~ 100.000%, 
+
 %%%% - blocks in this halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
 
+
+
 -% - blocks to next halving in percentage: 0.0% ~ 100.0%, 
+
 -%% - blocks to next halving in percentage: 0.00% ~ 100.00%, 
+
 -%%% - blocks to next halving in percentage: 0.000% ~ 100.000%, 
+
 -%%%% - blocks to next halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
 
+
 So, if your format string include the letter h, b or B you should escape this:
-blocksFormat(80000, 'h [Halvings], [block] bb') will return: 3 Halvings, block 170,000
-blocksFormat(80000, 'h [[Halvings]], [[block]] bb') will return: 3 Halvings, block 170,000
+
+```blocksFormat(80000, 'h [Halvings], [block] bb')``` will return: ```3 Halvings, block 170,000```
+
+```blocksFormat(80000, 'h [[Halvings]], [[block]] bb')``` will return: ```3 Halvings, block 170,000```
 
 ![formats](https://raw.githubusercontent.com/antonioconselheiro/time2blocks-ngx/master/imgs/time2blocks.png)
 
