@@ -15,5 +15,4 @@ export class Time2BlocksService {
   format(block: number, format: string, numberSeparator?: string): string {
     return this.time2Blocks.format(block, format, numberSeparator);
   }
-
 }
