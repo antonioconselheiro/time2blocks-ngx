@@ -5,7 +5,6 @@ RUN npm install @angular/cli typescript -g
 WORKDIR /time2blocks-ngx
 
 EXPOSE 4200
-EXPOSE 9876
 
 COPY ./.gitconfig /root/.gitconfig
 COPY ./.ssh /root/.ssh
