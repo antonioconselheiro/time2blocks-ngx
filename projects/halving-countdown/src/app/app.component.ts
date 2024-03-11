@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  time = new Date().getTime();
+  time = Math.floor(new Date().getTime() / 1000);
 }
