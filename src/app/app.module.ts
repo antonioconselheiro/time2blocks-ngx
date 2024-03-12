@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     Time2BlocksWidgetModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

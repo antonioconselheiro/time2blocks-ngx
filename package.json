@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npm run dev",
-    "dev": "ng serve halving-countdown --host=0.0.0.0",
+    "dev": "ng serve belomonte --host=0.0.0.0",
     "build": "ng build @belomonte/time2blocks-ngx",
+    "docs": "ng build belomonte",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -21,7 +22,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "@belomonte/time2blocks-light": "^1.1.9",
+    "@belomonte/time2blocks-light": "^1.1.10",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
