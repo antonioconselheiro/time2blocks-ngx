@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
 
   currentTime = this.updateTime();
 
-  private readonly oneSec = 1_000 * 3;
+  private readonly oneSec = 1_000 * 10;
   private intervalId!: number;
 
   ngOnInit(): void {
