@@ -16,6 +16,9 @@ This library contains `@belomonte/time2blocks` functions provided as angular ser
 ## Install
 ```npm install @belomonte/time2blocks-ngx --save```
 
+## Example
+[View working example](https://antonioconselheiro.github.io/time2blocks-ngx/)
+
 ## Usage
 ### Time2BlocksWidgetModule
 You can import the widget module to use the pipe, the widget module imports the service module too
