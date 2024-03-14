@@ -9,8 +9,8 @@
 Workspace for @belomonte angular library development
 
 ## Example
-[View time2blocks working example](https://antonioconselheiro.github.io/time2blocks-ngx/)
-[Open library README.md](./projects/belomonte/time2blocks-ngx/README.md)
+- [View time2blocks working example](https://antonioconselheiro.github.io/time2blocks-ngx/)
+- [Open library README.md](./projects/belomonte/time2blocks-ngx/README.md)
 
 ## Donate
 Help me continue working on tools for the bitcoin and nostr universe, like this one. #zapthedev
