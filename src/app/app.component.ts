@@ -7,15 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  currentTime = Math.floor(new Date().getTime() / 1000);
+  currentTime = this.updateTime();
 
-  private readonly oneMin = 1_000 * 60;
+  private readonly oneSec = 1_000 * 10;
+  private intervalId!: number;
 
   ngOnInit(): void {
-    setInterval(() => this.updateTime(), this.oneMin);
+    this.intervalId = +setInterval(() => this.currentTime = this.updateTime(), this.oneSec);
   }
 
-  updateTime(): void {
-    this.currentTime = Math.floor(new Date().getTime() / 1000);
+  ngOnDestroy(): void {
+    clearInterval(this.intervalId);
+  }
+
+  updateTime(): number {
+    return Math.floor(new Date().getTime() / 1000);
   }
 }

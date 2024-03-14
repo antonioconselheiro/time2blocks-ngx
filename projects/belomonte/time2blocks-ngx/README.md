@@ -30,8 +30,9 @@ import { Time2BlocksWidgetModule } from '@belomonte/time2blocks-ngx';
     BrowserModule,
     Time2BlocksWidgetModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
 ```
@@ -54,8 +55,9 @@ import { Time2BlocksServiceModule } from '@belomonte/time2blocks-ngx';
     BrowserModule,
     Time2BlocksServiceModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
 ```
@@ -65,9 +67,9 @@ Service usaged
 @Directive()
 export class AppService implements OnInit {
 
-  consntructor(
+  constructor(
     private time2BlocksService: Time2BlocksService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.time2BlocksService
@@ -90,42 +92,25 @@ export class AppService implements OnInit {
 
 ### Formats
 
-h - current halving
-
-H - next halving
-
--h - last halving
-
-B - all blocks
-
-BB - All blocks in format 0,000,000
-
-b - blocks in this halving
-
-bb - blocks in this halving in format 000,000
-
--b - blocks to next halving
-
--bb - blocks to next halving in format 000,000
-
-% - blocks in this halving in percentage: 0.0% ~ 100.0%, 
-
-%% - blocks in this halving in percentage: 0.00% ~ 100.00%, 
-
-%%% - blocks in this halving in percentage: 0.000% ~ 100.000%, 
-
-%%%% - blocks in this halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
-
-
-
--% - blocks to next halving in percentage: 0.0% ~ 100.0%, 
-
--%% - blocks to next halving in percentage: 0.00% ~ 100.00%, 
-
--%%% - blocks to next halving in percentage: 0.000% ~ 100.000%, 
-
--%%%% - blocks to next halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
-
+| symbol | result |
+|--------|--------|
+| h | current halving |
+| H | next halving |
+| -h | last halving
+| B | all blocks
+| BB | All blocks in format 0,000,000
+| b | blocks in this halving
+| bb | blocks in this halving in format 000,000
+| -b | blocks to next halving
+| -bb | blocks to next halving in format 000,000
+| % | blocks in this halving in percentage: 0.0% ~ 100.0%,
+| %% | blocks in this halving in percentage: 0.00% ~ 100.00%,
+| %%% | blocks in this halving in percentage: 0.000% ~ 100.000%,
+| %%%% | blocks in this halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
+| -% | blocks to next halving in percentage: 0.0% ~ 100.0%,
+| -%% | blocks to next halving in percentage: 0.00% ~ 100.00%,
+| -%%% | blocks to next halving in percentage: 0.000% ~ 100.000%,
+| -%%%% | blocks to next halving in raw percentage: 0.x ~ 100.x%, 65.4234234234234%, 21.5%
 
 So, if your format string include the letter h, b or B you should escape this:
 
@@ -148,18 +133,3 @@ Bitcoin onchain donate: [bitcoin:bc1qrm99lmmpwk7zsh7njpgthw87yvdm38j2lzpq7q](bit
 
 ![on-chain transfer](https://raw.githubusercontent.com/antonioconselheiro/time2blocks/master/imgs/qrcode-wallet-bitcoin.png)
 
-## Build
-
-Run `ng build time2blocks-ngx` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build time2blocks-ngx`, go to the dist folder `cd dist/time2blocks-ngx` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test time2blocks-ngx` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

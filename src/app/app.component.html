@@ -1,5 +1,10 @@
+<div> current time: {{currentTime}}</div>
+
 <h1>Time2Block pipe</h1>
 <h2>Time2Block current time</h2>
+
+<div ngNonBindable>{{ currentTime | time2blocks : 'h[º halving, block] B, -%% [to reach] Hº [halving]' | async }}</div>
+<div>{{ currentTime | time2blocks : 'h[º halving, block] B, -%% [to reach] Hº [halving]' | async }}</div>
 
 <table border="1">
   <thead>
