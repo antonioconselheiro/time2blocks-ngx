@@ -9,7 +9,7 @@ services:
       dockerfile: ./.devcontainer/Dockerfile
     working_dir: /time2blocks-ngx
     ports:
-      - "4203:4200"
+      - "4202:4200"
     volumes:
       - ..:/time2blocks-ngx:cached
       - /var/run/docker.sock:/var/run/docker.sock

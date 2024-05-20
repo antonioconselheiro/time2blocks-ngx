@@ -1,5 +1,5 @@
 {
-  "name": "Existing Docker Compose (Extend)",
+  "name": "Time2Blocks for Angular",
   "dockerComposeFile": [
     "docker-compose.yml"
   ],
