@@ -8,7 +8,16 @@ MIT
 MIT
 
 @belomonte/time2blocks-light
-Unlicense
+Ungovernable
+Ungovernable License
+
+This license denies copyright authority.
+Anything that is infinitely copyable has to way to be a property.
+
+You can do whatever you want with this content and
+other not related projects with any kind of copyrights.
+
+This is anarchy, this is cypherpunk ascension.
 
 @belomonte/time2blocks-ngx
 
