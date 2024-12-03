@@ -12,6 +12,21 @@ Ungovernable
 Ungovernable License
 
 This license denies copyright authority.
+Anything infinitely copyable has no way to be a property.
+
+You can do whatever you want with this content and
+other not related projects with any kind of copyrights.
+
+This is anarchy, this is cypherpunk ascension.
+
+<http://ungoverntem6lwkipe4msyaumd74esnpnw5idcumvx5hyjd4tvndf6qd.onion/>
+
+
+@belomonte/time2blocks-ngx
+Ungovernable
+Ungovernable License
+
+This license denies copyright authority.
 Anything that is infinitely copyable has to way to be a property.
 
 You can do whatever you want with this content and
@@ -19,7 +34,7 @@ other not related projects with any kind of copyrights.
 
 This is anarchy, this is cypherpunk ascension.
 
-@belomonte/time2blocks-ngx
+<http://owpa7cpoylktfl552tgjyqycgidlprqppqbjezt5nwsywh6bic2ozkyd.onion>
 
 calc-js
 MIT
