@@ -5,6 +5,7 @@
   ],
   "service": "time2blocks-ngx-dev",
 	"workspaceFolder": "/time2blocks-ngx",
+	"postCreateCommand": "./.devcontainer/auth.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [

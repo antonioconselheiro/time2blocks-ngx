@@ -1,15 +1,10 @@
-FROM node:20
+FROM node:22
 
 RUN npm install @angular/cli typescript -g
 
 WORKDIR /time2blocks-ngx
 
 EXPOSE 4200
-
-COPY ./.gitconfig /root/.gitconfig
-COPY ./.ssh /root/.ssh
-RUN chmod 600 -R /root/.ssh
-RUN ssh-add -D && ssh-add /root/.ssh/id_ed25519 || true
 
 # Keyboard & Timezone
 ENV LANG=C.UTF-8
