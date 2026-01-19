@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Time2BlocksService } from '../service/time2blocks.service';
 
 @Pipe({
-  name: 'blockFormat'
+    name: 'blockFormat',
+    standalone: false
 })
 export class BlockFormatPipe implements PipeTransform {
 
