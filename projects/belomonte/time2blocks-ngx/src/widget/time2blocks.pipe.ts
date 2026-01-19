@@ -2,8 +2,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Time2BlocksService } from '../service/time2blocks.service';
 
 @Pipe({
-  name: 'time2blocks',
-  pure: true
+    name: 'time2blocks',
+    pure: true,
+    standalone: false
 })
 export class Time2BlocksPipe implements PipeTransform {
 

@@ -1,6 +1,6 @@
 {
   "name": "@belomonte/time2blocks-ngx",
-  "version": "18.0.0",
+  "version": "19.0.0",
   "author": "António Conselheiro",
   "license": "Ungovernable",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "git+https://github.com/antonioconselheiro/time2blocks-ngx.git"
   },
   "peerDependencies": {
-    "@angular/common": "^18.2.14",
-    "@angular/core": "^18.2.14",
+    "@angular/common": "^19.2.18",
+    "@angular/core": "^19.2.18",
     "@belomonte/time2blocks-light": "^1.2.11"
   },
   "dependencies": {
